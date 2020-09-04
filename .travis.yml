@@ -7,6 +7,7 @@ addons:
     - libboost-test-dev
     - libspdlog-dev
 script:
+- cd 01
 - cmake .
 - cmake --build .
 - cmake --build . --target test
