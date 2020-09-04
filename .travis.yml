@@ -16,4 +16,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ushebdim:$BINTRAY_API_KEY "https://api.bintray.com/content/gulalexan/labs_cpp/homework/$TRAVIS_BUILD_NUMBER/lab1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T lab1-0.0.1-Linux.deb -ugulalexan:697b3852c44deb138382fa89c349ba78d6a1af67 "https://api.bintray.com/content/gulalexan/labs_cpp/lab1/1/lab1-0.0.1-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
